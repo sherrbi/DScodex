@@ -1,0 +1,62 @@
+{
+  "status": "PUBLIC_SOURCE_PREPARATION_EDITION",
+  "target_repository": "sherrbi/DScodex",
+  "visibility": "public",
+  "candidate": "sherrbi/DScodex",
+  "authentication": {
+    "verified_connector_account": "sherrbi",
+    "verified_repository": "sherrbi/DScodex",
+    "repository_id": "1400918755",
+    "visibility": "public",
+    "push_permission": true
+  },
+  "release_asset": {
+    "bytes": 1887777954,
+    "limit_bytes_exclusive": 2147483648,
+    "fits_size": true,
+    "upload_allowed": false,
+    "blocker": "proprietary desktop redistribution rights unconfirmed"
+  },
+  "source_manifest": [
+    {
+      "path": "src/bootstrap.py",
+      "bytes": 16085,
+      "sha256": "b846029107d0f474057e157bf80946a976f88b3a9b79eb26878e28a974574b23",
+      "rights": "user-maintained orchestration; owner provenance confirmation pending"
+    },
+    {
+      "path": "src/owned_process.py",
+      "bytes": 6179,
+      "sha256": "92123eef5aa26d1a92402b5e4bbb1df179f1f382c8ccc456da3f86ac1d50ebe7",
+      "rights": "user-maintained orchestration; owner provenance confirmation pending"
+    },
+    {
+      "path": "src/python313_runtime.py",
+      "bytes": 682,
+      "sha256": "418c6d9274335ce36fee2f36a9983d8f1ce82512fad9537708aa5c1b02cc2d82",
+      "rights": "user-maintained orchestration; owner provenance confirmation pending"
+    },
+    {
+      "path": "src/session_supervisor.py",
+      "bytes": 3391,
+      "sha256": "e51a8a1c45164e53194e37075a28d5543e209a6ef05dd2491f931ca15ae07952",
+      "rights": "user-maintained orchestration; owner provenance confirmation pending"
+    },
+    {
+      "path": "src/START.cmd",
+      "bytes": 218,
+      "sha256": "2aad91b9d92a5bd572efd05a7aafafb1ab16ecf8146817f4f72ea9a910e949c5",
+      "rights": "user-maintained orchestration; owner provenance confirmation pending"
+    }
+  ],
+  "small_source_audit_findings": [],
+  "third_party_license_clearance": "pending",
+  "external_actions_executed": "Repository created separately by owner-authorized browser; source submission pending",
+  "zip_modified": false,
+  "public_publication_requires": "confirmed target, source ownership and expanded private-data audit; ZIP license clearance remains blocked",
+  "user_authorization": "explicit public new repository DScodex",
+  "execution_blockers": [
+    "Complete private ZIP redistribution rights unresolved",
+    "Public full DSCodex rebuild not implemented or tested"
+  ]
+}

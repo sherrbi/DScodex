@@ -1,0 +1,5 @@
+# Public scaffold; provider endpoint/model must be confirmed by the friend.
+# No source account, absolute path, API key, task, skill payload or credential.
+cli_auth_credentials_store = "file"
+# Model configuration is intentionally absent until target provider approval.
+# MCP and plugins remain disabled; see dependency-inventory.json.

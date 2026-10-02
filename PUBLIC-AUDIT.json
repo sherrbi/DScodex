@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "files_checked": 19,
+  "bytes_checked": 64670,
+  "findings": [],
+  "skills_names": 412,
+  "plugins_names": 35,
+  "mcp_names": 17,
+  "binaries_credentials_chat_payloads_included": false,
+  "third_party_code_license_assigned": false,
+  "target_restore_tested": false,
+  "scope": "allowlisted text content patterns and Python syntax only; no full functionality claim",
+  "skill_inventory_scope": "Asset directory-name inventory, not a native discovery count"
+}

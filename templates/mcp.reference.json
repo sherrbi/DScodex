@@ -1,0 +1,289 @@
+{
+  "schema": 1,
+  "mcp": {
+    "deepseek_web": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/DeepSeekCodex\\dependencies\\python\\python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/DeepSeekCodex\\deepseek_web_mcp.py"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "independent_browser": {
+      "transport": "stdio",
+      "configured_in_source": false,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/DeepSeekCodex\\app\\resources\\cua_node\\bin\\node.exe",
+      "args": [
+        "{bundle}/assets/DeepSeekCodex\\browser\\node_modules\\@playwright\\mcp\\cli.js",
+        "--browser",
+        "msedge",
+        "--isolated",
+        "--headless"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "independent_workspace": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/DeepSeekCodex/dependencies/python/python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/DeepSeekCodex/workspace_mcp.py"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "deepwiki": {
+      "transport": "remote",
+      "configured_in_source": false,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "url": "https://mcp.deepwiki.com/mcp",
+      "requires_manual_credentials": false,
+      "enabled": false,
+      "public_implementation_available": false,
+      "env": {}
+    },
+    "context7": {
+      "transport": "remote",
+      "configured_in_source": false,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "url": "https://mcp.context7.com/mcp",
+      "requires_manual_credentials": false,
+      "enabled": false,
+      "public_implementation_available": false,
+      "env": {}
+    },
+    "academic_search": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/python313/python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/home/tools\\academic-search-mcp\\academic_search_server.py"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "ds_browser_persistent": {
+      "transport": "stdio",
+      "configured_in_source": false,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/DeepSeekCodex\\app\\resources\\cua_node\\bin\\node.exe",
+      "args": [
+        "{bundle}/assets/home/browser-pool-code/launch.mjs"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "ds_browser_headed": {
+      "transport": "stdio",
+      "configured_in_source": false,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [
+        "new-empty-browser-profile-only"
+      ],
+      "command": "{bundle}/assets/DeepSeekCodex\\app\\resources\\cua_node\\bin\\node.exe",
+      "args": [
+        "{bundle}/assets/DeepSeekCodex\\browser\\node_modules\\@playwright\\mcp\\cli.js",
+        "--browser",
+        "chrome",
+        "--user-data-dir",
+        "{state}/home\\chrome-profile-headed",
+        "--viewport-size",
+        "1440x900"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "github": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [
+        "target-user-authorization-required"
+      ],
+      "command": "{bundle}/assets/DeepSeekCodex\\github-mcp\\github-mcp-server.exe",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "requires_manual_credentials": true,
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "google": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [
+        "target-user-authorization-required"
+      ],
+      "command": "{bundle}/assets/DeepSeekCodex\\dependencies\\python\\python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/DeepSeekCodex\\google_mcp_server.py"
+      ],
+      "env": {},
+      "requires_manual_credentials": true,
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "ds_computer_use": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/DeepSeekCodex\\dependencies\\python\\python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/DeepSeekCodex\\ds-computer-use\\ds_computer_use_mcp.py"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "node_repl": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [
+        "original-private-user-path-removed"
+      ],
+      "command": "{bundle}/assets/DeepSeekCodex\\app\\resources\\cua_node\\bin\\node_repl.exe",
+      "args": [],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "consensus": {
+      "transport": "remote",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "url": "https://mcp.consensus.app/mcp",
+      "requires_manual_credentials": true,
+      "enabled": false,
+      "public_implementation_available": false,
+      "env": {}
+    },
+    "notion": {
+      "transport": "remote",
+      "configured_in_source": false,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "url": "https://mcp.notion.com/mcp",
+      "requires_manual_credentials": true,
+      "enabled": false,
+      "public_implementation_available": false,
+      "env": {}
+    },
+    "ds_thread_tools": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [],
+      "command": "{bundle}/assets/DeepSeekCodex\\dependencies\\python\\python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/DeepSeekCodex\\ds_thread_mcp.py"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "typesafe": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [
+        "target-user-authorization-required"
+      ],
+      "command": "{bundle}/assets/DeepSeekCodex\\dependencies\\python\\python.exe",
+      "args": [
+        "-u",
+        "{bundle}/assets/DeepSeekCodex\\typesafe_mcp_server.py"
+      ],
+      "env": {},
+      "requires_manual_credentials": true,
+      "enabled": false,
+      "public_implementation_available": false
+    },
+    "local_literature": {
+      "transport": "stdio",
+      "configured_in_source": true,
+      "auto_authorize": false,
+      "validated": false,
+      "template_notes": [
+        "target-user-library-path-required-no-original-Zotero-data"
+      ],
+      "command": "{bundle}/assets/DeepSeekCodex\\dependencies\\python\\python.exe",
+      "args": [
+        "-B",
+        "{bundle}/assets/DeepSeekCodex\\local-literature\\library_readonly.py",
+        "serve"
+      ],
+      "env": {},
+      "enabled": false,
+      "public_implementation_available": false
+    }
+  },
+  "source_entry_count": 17,
+  "template_entry_count": 17,
+  "audit": [
+    {
+      "mcp": "node_repl",
+      "field": "env.NODE_REPL_TRUSTED_CODE_PATHS",
+      "category": "manual-reviewed-value-required"
+    },
+    {
+      "mcp": "node_repl",
+      "field": "env.CODEX_HOME",
+      "category": "manual-reviewed-value-required"
+    },
+    {
+      "mcp": "node_repl",
+      "field": "env.NODE_REPL_TRUSTED_SERVICES",
+      "category": "manual-reviewed-value-required"
+    }
+  ],
+  "secrets_copied": false,
+  "original_configuration_copied": false,
+  "full_MCP_acceptance": "PENDING"
+}
